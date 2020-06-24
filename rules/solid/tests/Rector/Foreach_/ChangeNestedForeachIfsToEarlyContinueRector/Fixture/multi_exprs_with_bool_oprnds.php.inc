@@ -15,7 +15,7 @@ class MultiExprsWithBoolOprnds implements RunnableInterface
         {
             if(! is_null( $partPackage ) && ! is_object($partPackage) )
             {
-                if (1 == '1' || 2 == 't')
+                if (1 === 1 || 2 === 2)
                 {
                     $payload[] = $partPackage;
                 }
@@ -46,7 +46,7 @@ class MultiExprsWithBoolOprnds implements RunnableInterface
             }
             if (!! is_object($partPackage)) {
             }
-            if (1 == '1' && 2 == 't') {
+            if (1 === 1 && 2 === 2) {
                 continue;
             }
             $payload[] = $partPackage;
